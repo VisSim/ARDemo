@@ -1,0 +1,350 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="-199.01004028320312" scrolly="-110.00000000000006" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="2:VN0,_5#4$~qR^Eg2cP" x="190" y="110">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="7mg)KO}52yuxn1L?;n{v" x="190" y="350">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">background</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <shadow type="text" id="w5c1gyC=w:$XC/F8qbO~">
+          <field name="TEXT">none</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="oB%/[o;midVx[yRz3n)Q">
+          <field name="TEXT">.v3d-simple-preloader-bar</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="AlR-A*V:1ssIPSSZA*O8">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">backgroundImage</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="Bm;x3T!6)s+4^}j|Z~+!">
+              <field name="TEXT">url('my_image.png')</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="GzBqKCoA]#+UqFSRTu@p">
+              <field name="TEXT">.v3d-simple-preloader-logo</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setCSSRuleStyle" id="c?RFUZ:GhP%A+;cXI`:J">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">background</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="text" id="/E`T2?]r=86Y@1R0d;5z">
+                  <field name="TEXT">none</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="qV4otWt^iM)~2P+vrgeH">
+                  <field name="TEXT">.v3d-simple-preloader-background</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="kiiUn[upe.(N0..,p~L=" x="190" y="530">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">backgroundColor</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <shadow type="text" id="d)NH/(rpGH~i(WS%wt_/">
+          <field name="TEXT">transparent</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="P$Vpmg-?,!%vLyBJoJAl">
+          <field name="TEXT">.v3d-annotation-transparent</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="PV#w.,,$I?w2=[fs$iYv">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">opacity</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="~][g?`3Y8za-Ntt!+c$i">
+              <field name="TEXT">1</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="ld!5|Rb?l[TSqEi%q]NA">
+              <field name="TEXT">.v3d-annotation-transparent</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="Annotation" type="CommonTab" active="false" scrollx="-150" scrolly="-170.00000000000006" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="S7KyQkF58ZL7GRf)u04y" x="150" y="170">
+      <field name="VAR" id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="(`ZD[`KRLs=3l=eZ{;}c">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="a-kepSd+wg+/CKL8d-Y_" x="150" y="250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="z$LPhy^Gm8Q^}los#v_J">
+          <field name="TEXT">annotation</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="(wsKRgq[pM$:6T3gTla2">
+          <value name="IF0">
+            <block type="logic_compare" id="1R|ktmBVECfSqmePBevk">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="P+:F%U_LH/FN{Z5Tqb^e">
+                  <field name="VAR" id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="]CZcG@,6!4|)CjN$WiaU">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setHTMLElemStyle" id="FX/o:ZS/2`5+CId5Yzcj">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="displayDropdown" id=")]CuznLG4pQgr?VW;Y7a">
+                  <field name="TEXT">block</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="Z-R3}FR|Xqwkjstbx9/r">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="lists_create_with" id="sOr}U;S=S%g.arX*M{Z@">
+                  <mutation items="4"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="tHdWZEM6MWFHI@z_le7W">
+                      <field name="TEXT">an_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="DT$cW4yFUvwo3LY:Lb1Y">
+                      <field name="TEXT">an_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="|-CDFa}Xr-~z;w9)ebT6">
+                      <field name="TEXT">an_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="hBRvViPlrTpK]IeOPyy|">
+                      <field name="TEXT">an_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="OF$pI`z)WzjNFXou3V@r">
+                  <field name="VAR" id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id=",s$[(~F1Md[SxJN@liTi">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="setHTMLElemStyle" id="5%PzJJt@0-GS!vn;Nk!?">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="displayDropdown" id="GQ(H@VQ~mv`4_3(l7kVL">
+                  <field name="TEXT">none</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="Z-R3}FR|Xqwkjstbx9/r">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="lists_create_with" id="JgJ)$1UcT2k5DNJv:?Q%">
+                  <mutation items="4"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="@nc,p,{|WCZh/ss!lf?a">
+                      <field name="TEXT">an_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="-dtjXr}f}gUi-vy`hP%q">
+                      <field name="TEXT">an_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="~cf]7}8o4VGg`-8bM=MS">
+                      <field name="TEXT">an_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="LH#jchf0A0[:?ggq54~t">
+                      <field name="TEXT">an_4</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="%{$7ChpaZ:/E=W:?KmL|">
+                  <field name="VAR" id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="o$hw6^T2jwc^lp^Yx|/5">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Main" type="CommonTab" active="true" scrollx="1.1368683772161603e-13" scrolly="-1.7053025658242404e-13" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="sF:mLYD,M9QS-@OQW/vN" x="250" y="110">
+      <value name="VALUE">
+        <shadow type="objectList" id="j@c}T-?s$@1Mabvzt}}D">
+          <field name="FIELDNAME">prompt_move_around</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="hide" id="Nv:HFlb?W1.@BUv#JzAC">
+          <value name="VALUE">
+            <shadow type="objectList" id="T1^e87]v-MrV@}/2qmAk">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="86b)L3r%2R:gzRgP=NrR">
+              <field name="FIELDNAME">truck_group</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="checkARMode" id="2#=1QUSdgk8ns$aT|^/8" x="250" y="250">
+      <statement name="DO_AVAIL">
+        <block type="eventHTMLElem" id="%8p:1`x/+,p:[gynToV5">
+          <field name="EVENT">pointerup</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="_LqM`aQQ]=7D,a~8E(X*">
+              <field name="TEXT">enter_AR_button</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="enterARMode" id="%U6U;j|{#r9Uq~*(FH^y">
+              <field name="REF_SPACE">ORIGIN</field>
+              <field name="ALLOW_HTML">TRUE</field>
+              <statement name="DO_ENTER">
+                <block type="hide" id="G=YB5+!%1u_La$G-WEg0">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="T1^e87]v-MrV@}/2qmAk">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="groupList" id="m5K1b5`Bx=9=;%OgP:s0">
+                      <field name="FIELDNAME">truck_group</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="7$js.[,rrhHp:%bbWQl^">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="wVnm2+!y@6lLw.sz=f]S">
+                          <field name="FIELDNAME">prompt_move_around</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="arHitTest" id="PgHh,(zE+pd9qj7k{h^z">
+                          <value name="SMOOTH">
+                            <shadow type="math_number" id="]1bs0Tluc#e0B)d*fe)W">
+                              <field name="NUM">0.7</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO_HIT">
+                            <block type="show" id="ni=.YAzcFd[Iq?2F}X:[">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="^6R/E(16%6=[jQ1)+Sk@">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="groupList" id="wQ}28;{T]/4V$yPt.tiI">
+                                  <field name="FIELDNAME">indicator_group</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="hide" id="pd5M:{w?.vBloy*V?Q0N">
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="B?7FnF_m*wy[hpBw_*TK">
+                                      <field name="FIELDNAME">prompt_move_around</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setObjTransform" id="*}T||Mc,_IP?{mFgzasR">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="ZDuGAb`wj.5a,[49ZM:d">
+                                          <field name="FIELDNAME">IndicatorPlane</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="X">
+                                        <block type="arHitPoint" id="Y$!2rIt`lZ$S0*b1}#Q(">
+                                          <field name="COORD">x</field>
+                                        </block>
+                                      </value>
+                                      <value name="Y">
+                                        <block type="arHitPoint" id="dHl7%YcYMtb!4qC4*i8o">
+                                          <field name="COORD">y</field>
+                                        </block>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="arHitPoint" id="t?9g;rA0R${qYe@n46`(">
+                                          <field name="COORD">z</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1201.1999999999998" viewport-y="37" viewport-w="812.8" viewport-h="509" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

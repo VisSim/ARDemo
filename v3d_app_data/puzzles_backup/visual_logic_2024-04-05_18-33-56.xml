@@ -1,0 +1,118 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="138.174629211426" scrolly="46.45930862426741" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="2:VN0,_5#4$~qR^Eg2cP" x="190" y="110">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="7mg)KO}52yuxn1L?;n{v" x="190" y="350">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">background</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <shadow type="text" id="hk}?nl_0X7}]qO-z5ghh">
+          <field name="TEXT">red</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="oB%/[o;midVx[yRz3n)Q">
+          <field name="TEXT">.v3d-simple-preloader-bar</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="AlR-A*V:1ssIPSSZA*O8">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">backgroundImage</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="3yQF@9^0@K%;981^j#Hy">
+              <field name="TEXT">url("images/Logo.png")</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="GzBqKCoA]#+UqFSRTu@p">
+              <field name="TEXT">.v3d-simple-preloader-logo</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setCSSRuleStyle" id="c?RFUZ:GhP%A+;cXI`:J">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">background</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="text" id="hcegQeH`HX|yI44xx2E/">
+                  <field name="TEXT">#DCDCDC</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="qV4otWt^iM)~2P+vrgeH">
+                  <field name="TEXT">.v3d-simple-preloader-background</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="kiiUn[upe.(N0..,p~L=" x="190" y="530">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">backgroundColor</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <shadow type="text" id="oB]uky_qdu,V64ObMryJ">
+          <field name="TEXT">gray</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="P$Vpmg-?,!%vLyBJoJAl">
+          <field name="TEXT">.v3d-annotation-transparent</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="PV#w.,,$I?w2=[fs$iYv">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">opacity</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="`nOt)=AOkM_FLZcSt(Lo">
+              <field name="TEXT">0.0</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="ld!5|Rb?l[TSqEi%q]NA">
+              <field name="TEXT">.v3d-annotation-transparent</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="Annotation" type="CommonTab" active="true" scrollx="0" scrolly="-7.001048088073503" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="S7KyQkF58ZL7GRf)u04y" x="150" y="170">
+      <field name="VAR" id="hNhrOnysM#Ld*-eOkk/-">annotation_visible</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="(`ZD[`KRLs=3l=eZ{;}c">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="a-kepSd+wg+/CKL8d-Y_" x="150" y="250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="z$LPhy^Gm8Q^}los#v_J">
+          <field name="TEXT">annotation</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="(wsKRgq[pM$:6T3gTla2"></block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1201.1999999999998" viewport-y="37" viewport-w="812.8" viewport-h="509" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
